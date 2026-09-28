@@ -1,0 +1,5 @@
+case_name,username,password,expected_result,expected_message
+valid_login,oishidas49@gmail.com,2004,success,My Account
+invalid_username,wronguser@gmail.com,2004,error,Warning: No match for E-Mail Address and/or Password.
+invalid_password,oishidas49@gmail.com,wrong2004,error,Warning: No match for E-Mail Address and/or Password.
+invalid_both,wronguser@gmail.com,wrong2004,error,Warning: No match for E-Mail Address and/or Password.
