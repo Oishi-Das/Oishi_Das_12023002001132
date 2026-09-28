@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.5 (Python 3.14.7 on win32)" generated="2026-09-23T17:42:29.147738" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\Users\OISHI DAS\Desktop\RobotFramework_Selenium_Project\tests">
+<suite id="s1-s1" name="Basic Automation" source="C:\Users\OISHI DAS\Desktop\RobotFramework_Selenium_Project\tests\basic_automation.robot">
+<test id="s1-s1-t1" name="Open Browser And Verify Form" line="10">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-09-23T17:42:29.978664" level="INFO">Opening browser 'Chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-09-23T17:42:29.978032" elapsed="5.005518"/>
+</kw>
+<kw name="Set Screenshot Directory" owner="SeleniumLibrary">
+<arg>${SCREENSHOT_DIR}</arg>
+<doc>Sets the directory for captured screenshots.</doc>
+<status status="PASS" start="2026-09-23T17:42:34.985240" elapsed="0.001368"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-09-23T17:42:34.987561" elapsed="2.519524"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-09-23T17:42:40.510475" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-09-23T17:42:37.508206" elapsed="3.002554"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-09-23T17:42:40.925474" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshots/basic_01_homepage.png"&gt;&lt;img src="screenshots/basic_01_homepage.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>basic_01_homepage.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-09-23T17:42:40.511473" elapsed="0.414398"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2026-09-23T17:42:40.956357" level="INFO">Current page contains element 'id:name'.</msg>
+<arg>id:name</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2026-09-23T17:42:40.928170" elapsed="0.028587"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-09-23T17:42:41.411217" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshots/basic_02_name_element.png"&gt;&lt;img src="screenshots/basic_02_name_element.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>basic_02_name_element.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-09-23T17:42:40.958439" elapsed="0.453187"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-23T17:42:41.414546" level="INFO">Typing text 'Oishi Das' into text field 'id:name'.</msg>
+<arg>id:name</arg>
+<arg>Oishi Das</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-23T17:42:41.412825" elapsed="0.282108"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-09-23T17:42:43.698232" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-09-23T17:42:41.696184" elapsed="2.002288"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-09-23T17:42:44.080141" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshots/basic_03_name_entered.png"&gt;&lt;img src="screenshots/basic_03_name_entered.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>basic_03_name_entered.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-09-23T17:42:43.700202" elapsed="0.380323"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2026-09-23T17:42:44.110846" level="INFO">Current page contains element 'id:email'.</msg>
+<arg>id:email</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2026-09-23T17:42:44.082682" elapsed="0.028480"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-23T17:42:44.113069" level="INFO">Typing text 'oishi@example.com' into text field 'id:email'.</msg>
+<arg>id:email</arg>
+<arg>oishi@example.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-23T17:42:44.112218" elapsed="0.242232"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-09-23T17:42:46.357728" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-09-23T17:42:44.355678" elapsed="2.003242"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-09-23T17:42:46.773585" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshots/basic_04_email_entered.png"&gt;&lt;img src="screenshots/basic_04_email_entered.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>basic_04_email_entered.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-09-23T17:42:46.361623" elapsed="0.412403"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-09-23T17:42:46.774980" elapsed="2.526424"/>
+</kw>
+<status status="PASS" start="2026-09-23T17:42:29.975236" elapsed="19.326915"/>
+</test>
+<status status="PASS" start="2026-09-23T17:42:29.243955" elapsed="20.060331"/>
+</suite>
+<suite id="s1-s2" name="Custom Keyword Test" source="C:\Users\OISHI DAS\Desktop\RobotFramework_Selenium_Project\tests\custom_keyword_test.robot">
+<test id="s1-s2-t1" name="Fill Form Using Custom Keywords" line="5">
+<kw name="Open Practice Website" owner="common_keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-09-23T17:42:49.318381" level="INFO">Opening browser 'Chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-09-23T17:42:49.317910" elapsed="6.779097"/>
+</kw>
+<kw name="Set Screenshot Directory" owner="SeleniumLibrary">
+<arg>${SCREENSHOT_DIR}</arg>
+<doc>Sets the directory for captured screenshots.</doc>
+<status status="PASS" start="2026-09-23T17:42:56.097618" elapsed="0.001332"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-09-23T17:42:56.099726" elapsed="0.045400"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-09-23T17:42:59.148569" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-09-23T17:42:56.145912" elapsed="3.003125"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-09-23T17:42:59.562104" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshots/custom_keyword_01_open.png"&gt;&lt;img src="screenshots/custom_keyword_01_open.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>custom_keyword_01_open.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-09-23T17:42:59.149977" elapsed="0.412518"/>
+</kw>
+<status status="PASS" start="2026-09-23T17:42:49.316778" elapsed="10.246559"/>
+</kw>
+<kw name="Verify Name Field" owner="common_keywords">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2026-09-23T17:42:59.593309" level="INFO">Current page contains element 'id:name'.</msg>
+<arg>id:name</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2026-09-23T17:42:59.566702" elapsed="0.027097"/>
+</kw>
+<status status="PASS" start="2026-09-23T17:42:59.565085" elapsed="0.029899"/>
+</kw>
+<kw name="Fill Basic Form" owner="common_keywords">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2026-09-23T17:42:59.618953" level="INFO">Current page contains element 'id:name'.</msg>
+<arg>id:name</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2026-09-23T17:42:59.599263" elapsed="0.019997"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-23T17:42:59.620950" level="INFO">Typing text 'Oishi Das' into text field 'id:name'.</msg>
+<arg>id:name</arg>
+<arg>${name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-23T17:42:59.619950" elapsed="0.318707"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-09-23T17:43:01.941492" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-09-23T17:42:59.939373" elapsed="2.002482"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-23T17:43:01.943474" level="INFO">Typing text 'oishi@example.com' into text field 'id:email'.</msg>
+<arg>id:email</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-23T17:43:01.942493" elapsed="0.198111"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-09-23T17:43:04.143182" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-09-23T17:43:02.141180" elapsed="2.002416"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-23T17:43:04.145309" level="INFO">Typing text '9876543210' into text field 'id:phone'.</msg>
+<arg>id:phone</arg>
+<arg>${phone}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-23T17:43:04.144318" elapsed="0.191068"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-09-23T17:43:07.338114" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-09-23T17:43:04.336306" elapsed="3.002134"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-09-23T17:43:07.750612" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshots/custom_keyword_02_form.png"&gt;&lt;img src="screenshots/custom_keyword_02_form.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>custom_keyword_02_form.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-09-23T17:43:07.339105" elapsed="0.412052"/>
+</kw>
+<arg>Oishi Das</arg>
+<arg>oishi@example.com</arg>
+<arg>9876543210</arg>
+<status status="PASS" start="2026-09-23T17:42:59.597287" elapsed="8.154937"/>
+</kw>
+<kw name="Close Practice Website" owner="common_keywords">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-09-23T17:43:07.756015" elapsed="2.387741"/>
+</kw>
+<status status="PASS" start="2026-09-23T17:43:07.753936" elapsed="2.390105"/>
+</kw>
+<status status="PASS" start="2026-09-23T17:42:49.315490" elapsed="20.829110"/>
+</test>
+<status status="PASS" start="2026-09-23T17:42:49.306331" elapsed="20.840017"/>
+</suite>
+<suite id="s1-s3" name="Custom Library Test" source="C:\Users\OISHI DAS\Desktop\RobotFramework_Selenium_Project\tests\custom_library_test.robot">
+<test id="s1-s3-t1" name="Create Test Email" line="5">
+<kw name="Create Test Email" owner="CustomLibrary">
+<msg time="2026-09-23T17:43:10.161411" level="INFO">${email} = oishi.das@example.com</msg>
+<var>${email}</var>
+<arg>Oishi Das</arg>
+<status status="PASS" start="2026-09-23T17:43:10.161039" elapsed="0.000443"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${email}</arg>
+<arg>oishi.das@example.com</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2026-09-23T17:43:10.162035" elapsed="0.001952"/>
+</kw>
+<status status="PASS" start="2026-09-23T17:43:10.158562" elapsed="0.006403"/>
+</test>
+<test id="s1-s3-t2" name="Verify Phone Number" line="9">
+<kw name="Verify Phone Number" owner="CustomLibrary">
+<arg>9876543210</arg>
+<status status="PASS" start="2026-09-23T17:43:10.171290" elapsed="0.000459"/>
+</kw>
+<status status="PASS" start="2026-09-23T17:43:10.169140" elapsed="0.003805"/>
+</test>
+<test id="s1-s3-t3" name="Verify Text" line="12">
+<kw name="Verify Text Contains" owner="CustomLibrary">
+<arg>Robot Framework Selenium Automation</arg>
+<arg>Selenium</arg>
+<status status="PASS" start="2026-09-23T17:43:10.175423" elapsed="0.000506"/>
+</kw>
+<status status="PASS" start="2026-09-23T17:43:10.174061" elapsed="0.002309"/>
+</test>
+<status status="PASS" start="2026-09-23T17:43:10.149162" elapsed="0.029104"/>
+</suite>
+<suite id="s1-s4" name="Data Driven Test" source="C:\Users\OISHI DAS\Desktop\RobotFramework_Selenium_Project\tests\data_driven_test.robot">
+<test id="s1-s4-t1" name="Data Set 1" line="8">
+<kw name="Fill Form With External Data">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-09-23T17:43:10.247177" level="INFO">Opening browser 'Chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<arg>https://testautomationpractice.blogspot.com/</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-09-23T17:43:10.246821" elapsed="4.932380"/>
+</kw>
+<kw name="Set Screenshot Directory" owner="SeleniumLibrary">
+<arg>${EXECDIR}/screenshots</arg>
+<doc>Sets the directory for captured screenshots.</doc>
+<status status="PASS" start="2026-09-23T17:43:15.180054" elapsed="0.001009"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-09-23T17:43:15.181508" elapsed="0.051308"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-09-23T17:43:18.236673" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-09-23T17:43:15.233407" elapsed="3.003679"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-09-23T17:43:18.648391" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshots/data_Oishi%20Das_homepage.png"&gt;&lt;img src="screenshots/data_Oishi%20Das_homepage.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>data_${name}_homepage.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-09-23T17:43:18.237828" elapsed="0.411289"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2026-09-23T17:43:18.676188" level="INFO">Current page contains element 'id:name'.</msg>
+<arg>id:name</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2026-09-23T17:43:18.649876" elapsed="0.026657"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-23T17:43:18.678190" level="INFO">Typing text 'Oishi Das' into text field 'id:name'.</msg>
+<arg>id:name</arg>
+<arg>${name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-23T17:43:18.677252" elapsed="0.292205"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-09-23T17:43:20.973107" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-09-23T17:43:18.970611" elapsed="2.002891"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-23T17:43:20.975286" level="INFO">Typing text 'oishi1@example.com' into text field 'id:email'.</msg>
+<arg>id:email</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-23T17:43:20.974182" elapsed="0.211777"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-09-23T17:43:23.188604" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-09-23T17:43:21.186553" elapsed="2.002285"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-23T17:43:23.190571" level="INFO">Typing text '9876543210' into text field 'id:phone'.</msg>
+<arg>id:phone</arg>
+<arg>${phone}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-23T17:43:23.189957" elapsed="0.159140"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-09-23T17:43:28.352203" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-09-23T17:43:23.350029" elapsed="5.002615"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-09-23T17:43:28.794246" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshots/data_Oishi%20Das_form_filled.png"&gt;&lt;img src="screenshots/data_Oishi%20Das_form_filled.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>data_${name}_form_filled.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-09-23T17:43:28.353580" elapsed="0.441096"/>
+</kw>
+<arg>name=Oishi Das</arg>
+<arg>email=oishi1@example.com</arg>
+<arg>phone=9876543210</arg>
+<status status="PASS" start="2026-09-23T17:43:10.245862" elapsed="18.549172"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-09-23T17:43:28.796189" elapsed="2.428028"/>
+</kw>
+<status status="PASS" start="2026-09-23T17:43:10.244268" elapsed="20.980607"/>
+</test>
+<test id="s1-s4-t2" name="Data Set 2" line="8">
+<kw name="Fill Form With External Data">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-09-23T17:43:31.230585" level="INFO">Opening browser 'Chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<arg>https://testautomationpractice.blogspot.com/</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-09-23T17:43:31.230233" elapsed="6.757144"/>
+</kw>
+<kw name="Set Screenshot Directory" owner="SeleniumLibrary">
+<arg>${EXECDIR}/screenshots</arg>
+<doc>Sets the directory for captured screenshots.</doc>
+<status status="PASS" start="2026-09-23T17:43:37.987987" elapsed="0.000956"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-09-23T17:43:37.989623" elapsed="0.050053"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-09-23T17:43:41.042229" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-09-23T17:43:38.040236" elapsed="3.002479"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-09-23T17:43:41.451549" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshots/data_Rahul%20Sharma_homepage.png"&gt;&lt;img src="screenshots/data_Rahul%20Sharma_homepage.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>data_${name}_homepage.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-09-23T17:43:41.043406" elapsed="0.408520"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2026-09-23T17:43:41.477894" level="INFO">Current page contains element 'id:name'.</msg>
+<arg>id:name</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2026-09-23T17:43:41.453002" elapsed="0.025183"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-23T17:43:41.481182" level="INFO">Typing text 'Rahul Sharma' into text field 'id:name'.</msg>
+<arg>id:name</arg>
+<arg>${name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-23T17:43:41.478981" elapsed="0.299604"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-09-23T17:43:43.781030" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-09-23T17:43:41.779315" elapsed="2.002105"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-23T17:43:43.783250" level="INFO">Typing text 'rahul1@example.com' into text field 'id:email'.</msg>
+<arg>id:email</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-23T17:43:43.782160" elapsed="0.229319"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-09-23T17:43:46.014529" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-09-23T17:43:44.012130" elapsed="2.002918"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-23T17:43:46.016732" level="INFO">Typing text '9876543211' into text field 'id:phone'.</msg>
+<arg>id:phone</arg>
+<arg>${phone}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-23T17:43:46.015802" elapsed="0.267656"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-09-23T17:43:51.286096" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-09-23T17:43:46.284456" elapsed="5.001983"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-09-23T17:43:51.711998" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshots/data_Rahul%20Sharma_form_filled.png"&gt;&lt;img src="screenshots/data_Rahul%20Sharma_form_filled.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>data_${name}_form_filled.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-09-23T17:43:51.287131" elapsed="0.425576"/>
+</kw>
+<arg>name=Rahul Sharma</arg>
+<arg>email=rahul1@example.com</arg>
+<arg>phone=9876543211</arg>
+<status status="PASS" start="2026-09-23T17:43:31.229293" elapsed="20.483889"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-09-23T17:43:51.715069" elapsed="2.409052"/>
+</kw>
+<status status="PASS" start="2026-09-23T17:43:31.227568" elapsed="22.898603"/>
+</test>
+<test id="s1-s4-t3" name="Data Set 3" line="8">
+<kw name="Fill Form With External Data">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-09-23T17:43:54.132973" level="INFO">Opening browser 'Chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<arg>https://testautomationpractice.blogspot.com/</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-09-23T17:43:54.132289" elapsed="6.682877"/>
+</kw>
+<kw name="Set Screenshot Directory" owner="SeleniumLibrary">
+<arg>${EXECDIR}/screenshots</arg>
+<doc>Sets the directory for captured screenshots.</doc>
+<status status="PASS" start="2026-09-23T17:44:00.816014" elapsed="0.001190"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-09-23T17:44:00.817828" elapsed="0.053240"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-09-23T17:44:03.873768" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-09-23T17:44:00.871750" elapsed="3.002397"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-09-23T17:44:04.034351" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshots/data_Priya%20Singh_homepage.png"&gt;&lt;img src="screenshots/data_Priya%20Singh_homepage.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>data_${name}_homepage.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-09-23T17:44:03.874853" elapsed="0.159924"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2026-09-23T17:44:04.064191" level="INFO">Current page contains element 'id:name'.</msg>
+<arg>id:name</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2026-09-23T17:44:04.035428" elapsed="0.029087"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-23T17:44:04.066264" level="INFO">Typing text 'Priya Singh' into text field 'id:name'.</msg>
+<arg>id:name</arg>
+<arg>${name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-23T17:44:04.065154" elapsed="0.284205"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-09-23T17:44:06.352314" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-09-23T17:44:04.350130" elapsed="2.002442"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-23T17:44:06.353898" level="INFO">Typing text 'priya1@example.com' into text field 'id:email'.</msg>
+<arg>id:email</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-23T17:44:06.352973" elapsed="0.196186"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-09-23T17:44:08.551304" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-09-23T17:44:06.549807" elapsed="2.001814"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-23T17:44:08.553061" level="INFO">Typing text '9876543212' into text field 'id:phone'.</msg>
+<arg>id:phone</arg>
+<arg>${phone}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-23T17:44:08.552201" elapsed="0.193508"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-09-23T17:44:13.748062" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-09-23T17:44:08.746320" elapsed="5.002111"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-09-23T17:44:14.174319" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshots/data_Priya%20Singh_form_filled.png"&gt;&lt;img src="screenshots/data_Priya%20Singh_form_filled.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>data_${name}_form_filled.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-09-23T17:44:13.749142" elapsed="0.425555"/>
+</kw>
+<arg>name=Priya Singh</arg>
+<arg>email=priya1@example.com</arg>
+<arg>phone=9876543212</arg>
+<status status="PASS" start="2026-09-23T17:43:54.130935" elapsed="20.044680"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-09-23T17:44:14.177124" elapsed="2.490204"/>
+</kw>
+<status status="PASS" start="2026-09-23T17:43:54.129053" elapsed="22.538981"/>
+</test>
+<status status="PASS" start="2026-09-23T17:43:10.183419" elapsed="66.486349"/>
+</suite>
+<suite id="s1-s5" name="Variables Test" source="C:\Users\OISHI DAS\Desktop\RobotFramework_Selenium_Project\tests\variables_test.robot">
+<test id="s1-s5-t1" name="Fill Form Using Variables" line="13">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-09-23T17:44:16.677880" level="INFO">Opening browser 'Chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-09-23T17:44:16.677241" elapsed="5.688788"/>
+</kw>
+<kw name="Set Screenshot Directory" owner="SeleniumLibrary">
+<arg>${SCREENSHOT_DIR}</arg>
+<doc>Sets the directory for captured screenshots.</doc>
+<status status="PASS" start="2026-09-23T17:44:22.367099" elapsed="0.001017"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-09-23T17:44:22.368984" elapsed="0.056008"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-09-23T17:44:25.427938" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-09-23T17:44:22.426128" elapsed="3.002091"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-09-23T17:44:25.846996" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshots/variables_01_homepage.png"&gt;&lt;img src="screenshots/variables_01_homepage.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>variables_01_homepage.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-09-23T17:44:25.433227" elapsed="0.414223"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2026-09-23T17:44:25.876467" level="INFO">Current page contains element 'id:name'.</msg>
+<arg>id:name</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2026-09-23T17:44:25.851440" elapsed="0.025357"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-23T17:44:25.879790" level="INFO">Typing text 'Oishi Das' into text field 'id:name'.</msg>
+<arg>id:name</arg>
+<arg>${NAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-23T17:44:25.878446" elapsed="0.288967"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-09-23T17:44:28.171203" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-09-23T17:44:26.168634" elapsed="2.002906"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-09-23T17:44:28.563976" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshots/variables_02_name.png"&gt;&lt;img src="screenshots/variables_02_name.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>variables_02_name.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-09-23T17:44:28.172600" elapsed="0.391687"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-23T17:44:28.571436" level="INFO">Typing text 'oishi@example.com' into text field 'id:email'.</msg>
+<arg>id:email</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-23T17:44:28.568862" elapsed="0.296032"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-09-23T17:44:30.868291" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-09-23T17:44:28.866035" elapsed="2.002571"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-09-23T17:44:31.263868" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshots/variables_03_email.png"&gt;&lt;img src="screenshots/variables_03_email.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>variables_03_email.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-09-23T17:44:30.869921" elapsed="0.394440"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-23T17:44:31.266541" level="INFO">Typing text '9876543210' into text field 'id:phone'.</msg>
+<arg>id:phone</arg>
+<arg>${PHONE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-23T17:44:31.265597" elapsed="0.239977"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-09-23T17:44:35.508852" level="INFO">Slept 4 seconds.</msg>
+<arg>4s</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-09-23T17:44:31.506840" elapsed="4.002398"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-09-23T17:44:35.922221" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshots/variables_04_phone.png"&gt;&lt;img src="screenshots/variables_04_phone.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>variables_04_phone.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-09-23T17:44:35.512888" elapsed="0.409742"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-09-23T17:44:35.923827" elapsed="2.496352"/>
+</kw>
+<status status="PASS" start="2026-09-23T17:44:16.675698" elapsed="21.745515"/>
+</test>
+<status status="PASS" start="2026-09-23T17:44:16.671101" elapsed="21.752266"/>
+</suite>
+<status status="PASS" start="2026-09-23T17:42:29.152367" elapsed="129.273076"/>
+</suite>
+<statistics>
+<total>
+<stat pass="9" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="9" fail="0" skip="0">Tests</stat>
+<stat name="Basic Automation" id="s1-s1" pass="1" fail="0" skip="0">Tests.Basic Automation</stat>
+<stat name="Custom Keyword Test" id="s1-s2" pass="1" fail="0" skip="0">Tests.Custom Keyword Test</stat>
+<stat name="Custom Library Test" id="s1-s3" pass="3" fail="0" skip="0">Tests.Custom Library Test</stat>
+<stat name="Data Driven Test" id="s1-s4" pass="3" fail="0" skip="0">Tests.Data Driven Test</stat>
+<stat name="Variables Test" id="s1-s5" pass="1" fail="0" skip="0">Tests.Variables Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

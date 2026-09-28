@@ -1,0 +1,4 @@
+*** Test Cases ***;${name};${email};${phone}
+Data Set 1;Oishi Das;oishi1@example.com;9876543210
+Data Set 2;Rahul Sharma;rahul1@example.com;9876543211
+Data Set 3;Priya Singh;priya1@example.com;9876543212
